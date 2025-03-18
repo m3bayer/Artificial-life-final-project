@@ -2,7 +2,7 @@
 
 # Evolutionary Differentiable MPM Simulation
 
-This repository contains a differentiable Material Point Method (MPM) simulation implemented using Taichi. The code enables the simulation of soft-body materials with actuators, allowing for optimization using gradient-based techniques and evolution of robot form and movement.
+This repository contains a differentiable Material Point Method (MPM) simulation implemented using Taichi. The code enables the simulation of soft-body materials with actuators, allowing for optimization using gradient-based techniques and the evolution of robot form and movement.
 
 ## Features
 - Implements a differentiable MPM simulation.
@@ -12,10 +12,7 @@ This repository contains a differentiable Material Point Method (MPM) simulation
 - Includes a script to automate evolutionary optimization.
 
 ## Requirements
-Before running the code, install the necessary dependencies:
-```bash
-pip install taichi numpy matplotlib
-```
+Before running the code, install the necessary dependencies.
 
 ## Files
 - **diffmpm.py**: The main script containing the MPM simulation logic, along with the code for robot form generation, mutation, and evaluation.
@@ -35,7 +32,7 @@ The system follows an evolutionary approach to optimize soft robots by refining 
 
 ### 3. **Selection & Mutation**
    - The best-performing robot is selected based on fitness evaluation.
-   - A mutation process is applied to create a new generation of robots:
+   - A mutation process is applied to create a new generation of robots based off the best from the previous generation:
      - Each value in the robot’s matrix has a probability of mutating into an adjacent component type.
      - New variations of the best robot are generated, forming the next generation.
 
@@ -52,6 +49,7 @@ Key parameters can be adjusted in `diffmpm.py` and `subprocess_runner.py`:
 - `num_generations`: Determines the number of evolutionary iterations.
 - `population_size`: Defines the number of robots per generation.
 - `act_strength`: Modifies the intensity of actuation forces.
+but there are many more to help you personalize and tune the process
 
 ### Robot Structure
 - The robot's structure is represented as a 2D matrix where each cell can hold different robot components.
@@ -75,6 +73,4 @@ This will execute `diffmpm.py` multiple times sequentially, simulating the evolu
 - **Actuation Optimization:** Learning how to best integrate differentiable MPM with evolutionary learning requires tuning.
 - **Computation Costs:** Running multiple generations requires significant computational resources.
 
-## License
-This project is released under the MIT License.
 
