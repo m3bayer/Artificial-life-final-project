@@ -42,6 +42,9 @@ The system follows an evolutionary approach to optimize soft robots by refining 
 ### 4. **Iteration**
    - The cycle repeats over multiple generations, progressively evolving robot forms and movement strategies.
 
+![image](https://github.com/user-attachments/assets/4d5e9024-413a-4614-876c-717615b48987)
+
+
 ## Configuration
 ### Simulation Parameters
 Key parameters can be adjusted in `diffmpm.py` and `subprocess_runner.py`:
