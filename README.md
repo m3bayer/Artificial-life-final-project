@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/88024af5-ac9b-4fc6-98bf-18db2687d2da)
+
 # Evolutionary Differentiable MPM Simulation
 
 This repository contains a differentiable Material Point Method (MPM) simulation implemented using Taichi. The code enables the simulation of soft-body materials with actuators, allowing for optimization using gradient-based techniques and evolution of robot form and movement.
